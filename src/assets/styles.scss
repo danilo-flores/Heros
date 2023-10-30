@@ -1,0 +1,560 @@
+@font-face{
+	font-family : "IndustryBold";
+	src:  url("./fonts/Industry-Bold.ttf");
+}
+@font-face{
+	font-family : "IndustryBlack";
+	src:  url("./fonts/Industry-Black.ttf");
+}
+@font-face{
+	font-family : "IndustryMedium";
+	src:  url("./fonts/Industry-Medium.ttf");
+}
+
+.btn-switch-chain{
+	cursor: pointer;
+	width: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgba(23, 75, 173,0.5);
+	background-color: white;
+	border: 0;
+	border-radius: 16px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 14px;
+
+	&:hover{
+		background-color: white;
+	}
+}
+
+body{
+    font-family: "IndustryBold" !important;
+
+	&::-webkit-scrollbar{
+		width : 4px;
+	}
+
+	&::-webkit-scrollbar-track{
+		background-color: #e4e4e4;
+		border-radius: 100px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #323233;
+	}
+}
+
+.MuiListItemText-primary{
+    font-family: "IndustryMedium" !important;
+}
+
+.empty-dashboard{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 100px;
+	padding-left: 65px;
+	color: white;
+	width: calc(100% - 65px);
+	height: 100%;
+	h1{
+		font-family: "IndustryMedium";
+		font-size: 70px;
+		margin: 0;
+	}
+}
+
+.home-dashboard{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 100px;
+	padding-left: 65px;
+	color: white;
+	width: calc(100% - 65px);
+
+	.home-slider{
+		width: 80%;
+		.slick-dots{
+			.slick-active{
+				div{
+					background-color: red !important;
+				}
+			}
+		}
+		.one-slider{
+			width: 80%;
+			height: 370px;
+			display: inline-block;
+			border-radius: 12px;
+			background-repeat: no-repeat;
+			user-select: none;
+			
+			&.slider-1{
+				background-image: url('./images/sliders/slider1/background.jpg');
+				background-size: 100% 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				h2{
+					color:rgb(180, 188, 202);
+				}
+				.nft-slider-wrapper{
+					width: 100%;
+					
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					.nft-slider{
+						width: 80%;
+						.nft-image{	
+							img{
+								margin: 0 auto;
+								border-radius: 30px;
+								height: 250px;
+
+								@media (max-width: 480px) {
+									height: 200px
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&.slider-2{
+				background-image: url('./images/sliders/slider2/background.png');
+				background-size: 100% 100%;
+
+				.line-1{
+					margin-left: 50px;
+					margin-top: 70px;
+					text-align: left;
+					h1{
+						color:rgb(41, 216, 88);
+					}
+				}
+				.line-2{
+					padding-top: 20px;
+					color: rgb(41, 216, 88);//rgb(180, 188, 202);
+					margin-left: 50px;
+					text-align: left;
+				}
+				.line-3{
+					margin-left: 50px;
+					margin-top: 40px;
+					text-align: left;
+				}
+
+				@media (max-width:600px) {
+					.line-1{
+						width: 80%;
+						text-align: center;
+						margin: 70px auto 20px;
+						h1{
+							font-size: 24px;
+						}
+					}
+					.line-2{
+						width: 100%;
+						text-align: center;
+						margin: 20px auto 20px;
+						p{
+							padding: 0 20px;
+						}
+					}
+					.line-3{
+						width: 100%;
+						text-align: center;
+						margin: 50px auto 0;
+					}
+				}
+
+				@media (max-width:518px) {
+					.line-1{
+						h1{
+							font-size: 20px;
+						}
+					}
+					.line-2{
+						p{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+
+			&.slider-3{
+				background-color: #668A7E;
+				background-image: url('./images/sliders/slider3/background.gif');
+				background-size: auto 100%;
+
+				.line-1{
+					margin-right: 50px;
+					margin-top: 50px;
+					text-align: right;
+					h2{
+						margin:0;
+					}
+					h1{
+						font-size: 80px;
+						margin: 0;
+						color:rgb(41, 216, 88);
+					}
+				}
+				.line-2{
+					margin-right: 50px;
+					text-align: right;
+				}
+				.line-3{
+					margin-right: 50px;
+					text-align: right;
+				}
+			}
+
+			&.slider-4{
+				background-image: url('./images/sliders/slider4/background.jpg');
+				background-size: 100% 100%;
+			}
+		}
+	}
+
+	.home-origin{
+		margin-top: 30px;
+		width: 80%;
+		.home-origin-header{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap:10px;
+			h3{
+				color:rgb(180, 188, 202);
+				font-family: "IndustryMedium";
+				margin: 0;
+				font-size: 20px;
+				text-align: left;
+			}
+			.arrow-buttons{
+				display: flex;
+				gap: 20px;
+				button{
+					border: none;
+					border-radius: 4px;
+					background: rgb(36, 47, 66);
+					color: rgb(180, 188, 202);
+				}
+			}
+		}
+		.home-origin-body{
+			width: 100%;
+			padding-top: 25px;
+			cursor: pointer;
+			user-select: none;
+
+			.slick-track{
+				display: flex;
+				align-items: baseline;
+			}
+			.home-origin-one-wrapper{
+				position: relative;
+				&:hover{
+					transform: translate(0, -10px);
+					transition: all 0.5s ease 0s;
+				}
+
+				img{
+					width: 95%;
+					height: auto;
+					margin: 0 auto;
+					border-radius: 20px;
+				}
+
+				.one-origin-description{
+					position: absolute;
+					top: 70%;
+					left: 10%;
+					text-align: left;
+					p{
+						margin:0;
+						font-size: 12px;
+						font-family: "IndustryMedium";
+					}
+					h3{
+						margin:0;
+					}
+				}
+			}
+		}
+	}
+
+	.home-roadmap{
+		margin-bottom: 30px;
+		.home-roadmap-banner{
+			margin-top: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.dot{
+				width: 10px;
+				height: 10px;
+				border-radius: 100%;
+				background-color: #3ba0d3;
+			}
+			p{
+				margin:2px;
+				font-family: "IndustryMedium";
+			}
+		}
+		.home-roadmap-header{
+			margin:0px auto 20px;
+			width: 100%;
+			text-align: center;
+			p{
+				margin:0;
+				font-size: 60px;
+				span{
+					color: #3ba0d3;
+				}
+			}
+		}
+		.home-roadmap-content{
+			width: 90%;
+			margin: 0 auto;
+			.grid-container{
+				display: grid;
+				grid-template-columns: auto auto auto;
+				gap: 20px;
+				
+				@media(max-width: 1330px){
+					grid-template-columns: auto auto;
+				}
+				@media(max-width: 840px){
+					grid-template-columns: auto;
+				}
+			}
+			.home-roadmap-piece{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				cursor: pointer;
+			
+				.home-roadmap-piece-no{
+					border: 1px solid #3ba0d3;
+					color: #3ba0d3;
+					// padding: 5px 30px;
+					// padding: 20px auto;
+					min-width: 70px;
+					text-align: center;
+					p{
+						margin:5px 0;
+						font-size: 40px;
+						font-weight: 900;
+					}
+				}
+				.home-roadmap-piece-content{
+					display: flex;
+					align-items: start;
+					flex-direction: column;
+					.home-roadmap-piece-content-main{
+						text-align: left;
+						font-family: "IndustryMedium";
+						margin: 0;
+						font-weight: 600;
+					}
+					.home-roadmap-piece-content-details{
+						text-align: left;
+						font-family: "IndustryMedium";
+						margin: 0;
+						margin-top: 0.5em;
+						font-size: 12px;
+						color: rgba(255,255,255,0.48)
+					}
+				}
+			}
+		}
+	}
+
+	.home-partner{
+		width: 100%;
+		background-image: url('./images/bg.png');
+		background-size: 100% 100%;
+		.home-partner-banner{
+			margin-top: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.dot{
+				width: 10px;
+				height: 10px;
+				border-radius: 100%;
+				background-color: #3ba0d3;
+			}
+			p{
+				margin:2px;
+				font-family: "IndustryMedium";
+			}
+		}
+		.home-partner-header{
+			margin:0px auto 20px;
+			width: 100%;
+			text-align: center;
+			p{
+				margin:0;
+				font-size: 60px;
+				span{
+					color: #3ba0d3;
+				}
+			}
+		}
+		.home-partner-content{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-grow: 1 1;
+			
+
+			@media (max-width: 900px) {
+				flex-direction: column;
+			}
+
+			.home-partner-content-description{
+				width: 50%;
+				text-align: left;
+				margin-left: 50px;
+
+				@media (max-width: 900px) {
+					order: 2;
+					width: 80%;
+					margin-left: 0;
+				}
+			}
+			.home-partner-content-image-wrapper{
+				width: 50%;
+				@media (max-width: 900px) {
+					order: 1
+				}
+				
+				img{
+					width: 100%;
+					max-width: 500px;
+				}
+			}
+		}
+	}
+
+	.home-disclaimer{
+		width: 100%;
+		margin-top: 40px;
+		.home-disclaimer-header{
+			margin:0px auto 20px;
+			width: 100%;
+			text-align: center;
+			margin:0;
+			font-size: 60px;
+			color: #3ba0d3;
+		}
+		.home-disclaimer-content{
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+			p{
+				color: #b4bcca;
+				span{
+					font-size: 18px;
+					font-family: "IndustryMedium";
+					color:rgb(166, 26, 225);
+				}
+			}
+		}
+	}
+
+	.home-community{
+		margin-top: 30px;
+		padding-top: 30px;
+		width: 100%;
+		background-image: url('./images/bg.png');
+		background-size: 100% 100%;
+		
+		.home-community-banner{
+			font-size: 80px;
+		}
+		.home-community-header{
+			margin:0px auto 20px;
+			width: 100%;
+			text-align: center;
+			p{
+				margin:0;
+				font-size: 60px;
+				span{
+					color: #3ba0d3;
+				}
+			}
+		}
+		.home-community-content{
+			
+			margin-top: 80px;
+			margin-bottom: 40px;
+			display: flex;
+			justify-content: center;
+			gap: 40px;
+			@media (max-width: 660px) {
+				flex-direction: column;
+				align-items: center;
+			}
+			.btn-community{
+				width: 250px;
+				height: 60px;
+				border-radius: 25px;
+				font-size: 20px;
+				font-family: "IndustryBold";
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				@media (max-width: 660px) {
+					width: 80%;
+				}
+			}
+			.btn-twitter{
+				background: none;
+				color: white;
+				border: 2px solid white;
+
+				&:hover{
+					border: none;
+					color: white;
+					background-color: #3ba0d3;
+				}
+			}
+			.btn-discord{
+				border: none;
+				color: white;
+				background-color: #3ba0d3;
+
+				&:hover{
+					background: none;
+					color: white;
+					border: 2px solid white;
+				}
+			}
+		}
+	}
+
+	.home-footer{
+		width: 100%;
+		height:40px;
+		p{
+			font-family: "IndustryMedium";
+			font-size: 12px;
+		}
+	}
+}
